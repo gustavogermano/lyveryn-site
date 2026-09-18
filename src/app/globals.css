@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a3ff6b;
+  --color-secondary: #1f2937;
+  --color-support: #94a3bb;
+  --color-background: #e5e7eb;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-secondary);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
