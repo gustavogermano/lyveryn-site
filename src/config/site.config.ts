@@ -1,3 +1,5 @@
+import { assetPath } from "@/utils/assetPath";
+
 export const siteConfig = {
   name: "Lyveryn",
   tagline: "Sites • Cardápios Digitais",
@@ -28,8 +30,8 @@ export const siteConfig = {
     }.`,
 
   logo: {
-    icon: "/images/logo-icon.svg",
-    full: "/images/gallery/logo-transparente.png",
+    icon: assetPath("/images/logo-icon.svg"),
+    full: assetPath("/images/gallery/logo-transparente.png"),
   },
 
   seo: {

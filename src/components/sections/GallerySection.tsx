@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
 import { AnimatedReveal } from "@/components/common/AnimatedReveal";
 import { galleryItems } from "@/data/gallery";
+import { assetPath } from "@/utils/assetPath";
 
 export function GallerySection() {
   return (
@@ -22,7 +23,7 @@ export function GallerySection() {
             <AnimatedReveal key={item.id} delay={index * 0.1}>
               <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary/10">
                 <Image
-                  src={item.image}
+                  src={assetPath(item.image)}
                   alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"

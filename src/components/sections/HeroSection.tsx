@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { siteConfig } from "@/config/site.config";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
+import { assetPath } from "@/utils/assetPath";
 
 export function HeroSection() {
   return (
@@ -81,7 +82,7 @@ export function HeroSection() {
         >
           <div className="mx-auto max-w-md">
             <img
-              src="/images/gallery/notebookcelular"
+              src={assetPath("/images/gallery/notebookcelular")}
               alt="Notebook e celular"
               className="w-full rounded-[1.5rem] shadow-2xl shadow-secondary/10 object-cover"
             />

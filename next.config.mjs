@@ -11,6 +11,9 @@ const nextConfig = {
   trailingSlash: true,
   basePath: isProd ? `/${REPO_NAME}` : "",
   assetPrefix: isProd ? `/${REPO_NAME}/` : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${REPO_NAME}` : "",
+  },
   images: {
     unoptimized: true,
   },
