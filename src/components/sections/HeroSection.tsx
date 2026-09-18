@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/LinkButton";
-import { Badge } from "@/components/ui/Badge";
 import { siteConfig } from "@/config/site.config";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
@@ -29,7 +28,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
-          <Badge>Mídia Kit / 2025</Badge>
+          
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-secondary sm:text-5xl lg:text-6xl">
             Tecnologia que{" "}
@@ -80,23 +79,12 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
           className="relative"
         >
-          <div className="relative mx-auto max-w-md rounded-[2rem] border border-white/60 bg-white/70 p-3 shadow-2xl shadow-secondary/10 backdrop-blur">
-            <div className="overflow-hidden rounded-[1.5rem] bg-secondary">
-              <div className="flex items-center gap-1.5 bg-secondary/90 px-4 py-3">
-                <span className="h-2.5 w-2.5 rounded-full bg-primary/70" />
-                <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-              </div>
-              <div className="space-y-4 p-6">
-                <div className="h-3 w-2/3 rounded-full bg-white/20" />
-                <div className="h-3 w-1/2 rounded-full bg-white/10" />
-                <div className="mt-6 h-32 rounded-xl bg-primary/20" />
-                <div className="flex gap-3">
-                  <div className="h-9 flex-1 rounded-full bg-primary" />
-                  <div className="h-9 w-9 rounded-full bg-white/10" />
-                </div>
-              </div>
-            </div>
+          <div className="mx-auto max-w-md">
+            <img
+              src="/images/gallery/notebookcelular"
+              alt="Notebook e celular"
+              className="w-full rounded-[1.5rem] shadow-2xl shadow-secondary/10 object-cover"
+            />
           </div>
 
           <motion.div

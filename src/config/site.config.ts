@@ -29,7 +29,7 @@ export const siteConfig = {
 
   logo: {
     icon: "/images/logo-icon.svg",
-    full: "/images/logo-full.svg",
+    full: "/images/gallery/logo-transparente.png",
   },
 
   seo: {
