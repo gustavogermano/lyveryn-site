@@ -8,20 +8,20 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "1",
-    title: "SeuSabor — Cardápio Digital",
+    title: "Bulldog — Cardápio Digital",
     category: "Cardápio Digital",
-    image: "/images/gallery/seusabor.jpg",
+    image: "/images/gallery/bulldog-cardapio.png",
   },
   {
     id: "2",
-    title: "Projeto Institucional",
+    title: "Site de advocacia",
     category: "Site Institucional",
-    image: "/images/gallery/institucional-1.jpg",
+    image: "/images/gallery/advocacia-site.png",
   },
   {
     id: "3",
-    title: "Projeto Institucional",
+    title: "Site de energia solar",
     category: "Site Institucional",
-    image: "/images/gallery/institucional-2.jpg",
+    image: "/images/gallery/solaris-site.png",
   },
 ];

@@ -21,13 +21,13 @@ export function GallerySection() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {galleryItems.map((item, index) => (
             <AnimatedReveal key={item.id} delay={index * 0.1}>
-              <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary/10">
+              <div className="group relative aspect-[1.15] overflow-hidden rounded-2xl bg-transparent">
                 <Image
                   src={assetPath(item.image)}
                   alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                 />
                 <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-secondary/80 via-secondary/0 to-transparent p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <Badge variant="primary" className="mb-2 self-start">

@@ -27,7 +27,7 @@ export const faqItems: FaqItem[] = [
     id: "4",
     question: "Posso atualizar os preços e produtos sozinho?",
     answer:
-      "Sim. Deixamos tudo organizado para que você consiga atualizar preços, textos e imagens com facilidade, ou contar com o nosso suporte quando precisar.",
+      "Não. É necessário contar com o nosso suporte para realizar essas atualizações.",
   },
   {
     id: "5",
